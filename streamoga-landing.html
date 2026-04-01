@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Streamoga IPTV | Premium 4K Family Entertainment</title>
+    <meta name="description" content="Streamoga IPTV offers premium 4K streaming, 27,000+ channels, movies and series for the whole family. Choose flexible monthly or lifetime plans.">
+    <meta name="keywords" content="Streamoga IPTV, premium IPTV, 4K IPTV, family streaming, movies, series, live channels">
+    <meta name="author" content="Streamoga">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://streamoga.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Streamoga IPTV | Premium 4K Family Entertainment">
+    <meta property="og:description" content="Premium IPTV with 27,000+ channels, 4K quality, movies and series for the whole family.">
+    <meta property="og:url" content="https://streamoga.com/">
+    <meta property="og:image" content="https://streamoga.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Streamoga IPTV | Premium 4K Family Entertainment">
+    <meta name="twitter:description" content="Premium IPTV with 27,000+ channels, 4K quality, movies and series for the whole family.">
+    <meta name="twitter:image" content="https://streamoga.com/og-image.jpg">
+	<link rel="icon" href="/favicon.ico">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Streamoga",
+      "url": "https://streamoga.com/",
+      "description": "Premium IPTV with 27,000+ channels, 4K quality, movies and series for the whole family."
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+	 html {
+        scroll-behavior: smooth;
+    }
+    #subscriptions {
+        scroll-margin-top: 110px;
+    }
+        body { font-family: 'Inter', sans-serif; background: radial-gradient(circle at 10% 20%, #0a0c15, #030507); scroll-behavior: smooth; }
+        .pricing-card { transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1); border: 1px solid rgba(51, 65, 85, 0.5); background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); }
+        .pricing-card:hover { transform: translateY(-8px); border-color: #3b82f6; box-shadow: 0 25px 40px -12px rgba(59, 130, 246, 0.35); }
+        .big-deal-card {
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            border: 2px solid rgba(245, 158, 11, 0.8);
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.98));
+            backdrop-filter: blur(12px);
+            position: relative;
+            transform: scale(1.02);
+            box-shadow: 0 30px 45px -15px rgba(245, 158, 11, 0.4);
+        }
+        .big-deal-card:hover { transform: scale(1.05) translateY(-8px); border-color: #f59e0b; box-shadow: 0 40px 55px -15px rgba(245, 158, 11, 0.6); }
+        .lifetime-card { transition: all 0.3s ease; border: 1px solid rgba(245, 158, 11, 0.3); background: linear-gradient(135deg, #1e293b, #0f172a); }
+        .lifetime-card:hover { transform: translateY(-6px); border-color: #f59e0b; box-shadow: 0 20px 35px -12px rgba(245, 158, 11, 0.3); }
+        .tab-btn { transition: all 0.2s; cursor: pointer; font-weight: 600; backdrop-filter: blur(4px); }
+        .tab-btn.active { background: #3b82f6; color: white; border-color: #3b82f6; box-shadow: 0 4px 14px rgba(59,130,246,0.4); }
+        .feature-list li { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 0.8rem; color: #cbd5e6; }
+        .feature-list li i { width: 18px; color: #3b82f6; font-size: 0.75rem; }
+        .price-big { font-size: 3.2rem; font-weight: 900; background: linear-gradient(135deg, #FFD966, #f59e0b); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .show-card { transition: all 0.3s ease; cursor: pointer; background: rgba(15, 25, 45, 0.6); backdrop-filter: blur(4px); }
+        .show-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.6); border-color: #f59e0b; }
+        .navbar-blur { backdrop-filter: blur(12px); background: rgba(10, 12, 21, 0.85); border-bottom: 1px solid rgba(59,130,246,0.2); }
+        .family-hero { background: linear-gradient(135deg, #0f172a 0%, #1e1b2e 100%); position: relative; overflow: hidden; }
+        .family-overlay { background: radial-gradient(circle at 30% 40%, rgba(59,130,246,0.15), transparent 70%); }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .float-animation { animation: float 4s ease-in-out infinite; }
+        .skeleton-card { background: linear-gradient(90deg, #1e293b 25%, #2d3a4e 50%, #1e293b 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: 0.75rem; height: 180px; }
+        @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #f59e0b; border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased text-gray-200">
+
+    <!-- Navigation Menu Bar -->
+    <nav class="navbar-blur fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-play-circle text-amber-500 text-2xl"></i>
+                    <span class="text-2xl font-black bg-gradient-to-r from-white to-amber-400 bg-clip-text text-transparent">Stream<span class="text-amber-500">OGA</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="text-gray-300 hover:text-amber-500 transition"><i class="fas fa-home mr-1"></i> Home</a>
+                    <a href="#subscriptions" class="text-gray-300 hover:text-amber-500 transition"><i class="fas fa-tags mr-1"></i> Plans</a>
+                    <a href="#popular-shows" class="text-gray-300 hover:text-amber-500 transition"><i class="fas fa-fire mr-1"></i> Popular Shows</a>
+                    <a href="#lifetime" class="text-gray-300 hover:text-amber-500 transition"><i class="fas fa-infinity mr-1"></i> Lifetime</a>
+                    <a href="https://wa.me/447479691649" target="_blank" class="bg-green-600 hover:bg-green-500 px-4 py-2 rounded-full text-white transition flex items-center gap-2"><i class="fab fa-whatsapp"></i> Order Now</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 focus:outline-none"><i class="fas fa-bars text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="#home" class="block py-2 text-gray-300 hover:text-amber-500"><i class="fas fa-home mr-2"></i> Home</a>
+                <a href="#subscriptions" class="block py-2 text-gray-300 hover:text-amber-500"><i class="fas fa-tags mr-2"></i> Plans</a>
+                <a href="#popular-shows" class="block py-2 text-gray-300 hover:text-amber-500"><i class="fas fa-fire mr-2"></i> Popular Shows</a>
+                <a href="#lifetime" class="block py-2 text-gray-300 hover:text-amber-500"><i class="fas fa-infinity mr-2"></i> Lifetime</a>
+                <a href="https://wa.me/447479691649" target="_blank" class="block py-2 bg-green-600 text-center rounded-xl text-white"><i class="fab fa-whatsapp mr-2"></i> Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Family Watching Together -->
+    <section id="home" class="family-hero pt-28 pb-16 md:pt-32 md:pb-24 px-6 relative overflow-hidden">
+        <div class="family-overlay absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-sm border border-amber-500/30 rounded-full px-5 py-2 mb-6 text-sm font-medium">
+                        <i class="fas fa-users text-amber-400"></i> Family Entertainment · 4K Ultra HD
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-black leading-tight">
+                        <span class="bg-gradient-to-r from-white via-amber-200 to-amber-400 bg-clip-text text-transparent">Stream Together,</span><br>
+                        <span class="text-amber-500">Watch Together</span>
+                    </h1>
+                    <p class="text-gray-300 text-lg mt-6 max-w-lg mx-auto md:mx-0">27,000+ live channels, movies, series & exclusive content. Perfect for family movie nights and sports events. One subscription for the whole family.</p>
+                    <div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
+                        <a href="#subscriptions" class="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-white font-bold px-8 py-3 rounded-full transition shadow-xl flex items-center gap-2"><i class="fas fa-gem"></i> View Plans</a>
+                        <a href="https://wa.me/447479691649" target="_blank" class="bg-slate-800/80 border border-slate-600 hover:border-amber-500 text-white font-bold px-8 py-3 rounded-full transition flex items-center gap-2"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
+                    </div>
+                    <div class="flex items-center gap-4 justify-center md:justify-start mt-8 text-sm text-slate-400">
+                        <span><i class="fas fa-check-circle text-green-500"></i> 27K+ Channels</span>
+                        <span><i class="fas fa-check-circle text-green-500"></i> 4K Quality</span>
+                        <span><i class="fas fa-check-circle text-green-500"></i> 24/7 Support</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-center">
+                    <div class="relative float-animation">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-blue-500/20 blur-2xl rounded-full"></div>
+                        <img src="family.jpg" alt="Family watching IPTV 4K streaming on Streamoga service" class="rounded-2xl shadow-2xl border border-amber-500/30 w-full max-w-md">
+                        <div class="absolute -bottom-6 -right-6 bg-slate-900/90 backdrop-blur rounded-xl p-3 border border-amber-500/40">
+                            <i class="fas fa-play-circle text-amber-500 text-3xl"></i>
+                            <p class="text-xs font-bold">100% Anonymous</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-12">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#f59e0b"></path>
+                <path d="M0,0V15.81C13,21.25,27.93,25.67,44.24,28.45c69.76,11,140.66,5.45,210.21-7.41,69-12.83,136.8-36.46,206.8-38.53,70-2.07,136.8,19.37,206.8,38.53,70,19.16,136.8,40.59,206.8,37.5,69.75-3.1,139.5-19.2,209.2-30.49C1025.58,20.52,1115,5.13,1200,0Z" opacity=".5" fill="#f59e0b"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Subscription Tabs & Plans (same as before - kept functional) -->
+    <section id="subscriptions" class="py-12 px-4 mt-4">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-3">Choose Your <span class="text-amber-500">Device Plan</span></h2>
+            <div class="w-24 h-1 bg-amber-600 mx-auto rounded-full mb-4"></div>
+            <p class="text-slate-400">12-month plans are <span class="text-amber-400 font-bold">HIGHLIGHTED & BIGGER</span> — best value with free setup guide</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 mb-12 px-4">
+            <button data-device="1" class="tab-btn device-tab px-7 py-3 rounded-xl text-sm font-bold bg-slate-800/50 border border-slate-700">📺 1 Device</button>
+            <button data-device="2" class="tab-btn device-tab px-7 py-3 rounded-xl text-sm font-bold bg-slate-800/50 border border-slate-700">📺📺 2 Devices</button>
+            <button data-device="3" class="tab-btn device-tab px-7 py-3 rounded-xl text-sm font-bold bg-slate-800/50 border border-slate-700">📺📺📺 3 Devices</button>
+            <button data-device="4" class="tab-btn device-tab px-7 py-3 rounded-xl text-sm font-bold bg-slate-800/50 border border-slate-700">📺📺📺📺 4 Devices</button>
+        </div>
+        <div id="pricing-grid-container" class="container mx-auto px-4">
+            <div id="pricing-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 max-w-7xl mx-auto"></div>
+        </div>
+    </section>
+
+
+<!-- Lifetime Section -->
+    <section id="lifetime" class="py-20 px-4 bg-gradient-to-b from-slate-900/60 to-slate-950 border-y border-slate-800/80">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-14">
+                <span class="bg-amber-500/20 text-amber-400 font-bold px-5 py-1.5 rounded-full text-xs uppercase tracking-wider border border-amber-500/40"><i class="fab fa-bitcoin mr-1"></i> LIFETIME · ONE-TIME</span>
+                <h2 class="text-4xl md:text-5xl font-black mt-5 bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">Lifetime Access</h2>
+                <p class="text-slate-400 mt-3 max-w-xl mx-auto">Pay once, stream forever. <strong class="text-white">PayPal & Crypto only</strong> — no hidden fees.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="lifetime-card rounded-2xl p-7 flex flex-col items-center text-center"><div class="bg-amber-500/20 p-3 rounded-full mb-4"><i class="fas fa-tv text-amber-400 text-2xl"></i></div><h3 class="text-2xl font-extrabold text-amber-400">1 Connection</h3><div class="text-5xl font-black my-4">279€</div><ul class="feature-list text-left w-full mt-2 mb-6 space-y-2"><li><i class="fas fa-check-circle text-amber-500"></i> 4K +27K channels</li><li><i class="fas fa-check-circle text-amber-500"></i> Updated Movies/Series</li><li><i class="fas fa-check-circle text-amber-500"></i> 24/7 Support</li></ul><a href="https://wa.me/447479691649?text=I want Lifetime 1 connection 279€" class="w-full bg-amber-600 hover:bg-amber-500 py-3.5 rounded-xl text-center font-bold"><i class="fab fa-whatsapp mr-2"></i> Get Lifetime</a></div>
+                <div class="lifetime-card rounded-2xl p-7 flex flex-col items-center text-center border-2 border-amber-500 relative"><div class="absolute top-4 right-[-30px] rotate-45 bg-amber-500 text-black font-black text-[10px] py-1 px-10 uppercase">BEST VALUE</div><div class="bg-amber-500/30 p-3 rounded-full mb-4"><i class="fas fa-tv text-amber-400"></i><i class="fas fa-tv text-amber-400"></i></div><h3 class="text-2xl font-extrabold text-amber-400">2 Connections</h3><div class="text-5xl font-black my-4">349€</div><ul class="feature-list text-left w-full mb-6"><li><i class="fas fa-check-circle text-amber-500"></i> 2 Devices</li><li><i class="fas fa-check-circle text-amber-500"></i> 4K +27K channels</li><li><i class="fas fa-check-circle text-amber-500"></i> Premium Support</li></ul><a href="https://wa.me/447479691649?text=I want Lifetime 2 connections 349€" class="w-full bg-amber-600 hover:bg-amber-500 py-3.5 rounded-xl text-center font-bold"><i class="fab fa-whatsapp mr-2"></i> Get Lifetime</a></div>
+                <div class="lifetime-card rounded-2xl p-7 flex flex-col items-center text-center"><div class="bg-amber-500/20 p-3 rounded-full mb-4"><i class="fas fa-tv text-amber-400"></i><i class="fas fa-tv text-amber-400"></i><i class="fas fa-tv text-amber-400"></i></div><h3 class="text-2xl font-extrabold text-amber-400">3 Connections</h3><div class="text-5xl font-black my-4">399€</div><ul class="feature-list text-left w-full mb-6"><li><i class="fas fa-check-circle text-amber-500"></i> 3 Devices</li><li><i class="fas fa-check-circle text-amber-500"></i> Family Plan</li><li><i class="fas fa-check-circle text-amber-500"></i> Free Setup Guide</li></ul><a href="https://wa.me/447479691649?text=I want Lifetime 3 connections 399€" class="w-full bg-amber-600 hover:bg-amber-500 py-3.5 rounded-xl text-center font-bold"><i class="fab fa-whatsapp mr-2"></i> Get Lifetime</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Shows Section - DYNAMIC from TVmaze API -->
+    <section id="popular-shows" class="py-20 px-4 bg-gradient-to-b from-slate-900/40 to-slate-950/60">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                     <h2 class="text-4xl md:text-5xl font-black mt-4">Popular <span class="text-amber-500">Shows & Movies</span></h2>
+                <p class="text-slate-400 mt-3 max-w-2xl mx-auto">Top 20 trending series — stream them all with your StreamOGA subscription</p>
+            </div>
+            <div id="shows-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+                <!-- Skeleton loaders will be replaced by JS -->
+                <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+                <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+            </div>
+            <div class="text-center mt-10">
+                <p class="text-slate-400 text-sm"><i class="fas fa-plus-circle text-amber-500"></i> + thousands more movies, series, live events & exclusive channels</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="py-12 text-center border-t border-slate-800/60 bg-slate-950/30">
+        <p class="text-2xl font-black bg-gradient-to-r from-white to-amber-300 bg-clip-text text-transparent">Stream<span class="text-amber-500">OGA</span></p>
+        <p class="text-slate-500 text-sm mt-3">© 2025 StreamOGA — Premium IPTV for the whole family. 27,000+ channels, 4K Quality.</p>
+           </footer>
+
+    <script>
+        const WA_NUMBER = "447479691649";
+        const getStandardFeatures = () => `<ul class="feature-list space-y-1.5 mt-3"><li><i class="fas fa-check-circle text-blue-500"></i> Standard Support</li><li><i class="fas fa-tv"></i> SD / HD / FULL HD / 4K</li><li><i class="fas fa-globe"></i> +27 000 CHANNEL</li><li><i class="fas fa-film"></i> UPDATED SERIES & MOVIES</li><li><i class="fab fa-amazon"></i> Prime video / Disney+</li><li><i class="fas fa-headset"></i> SUPPORT 24/7 /365</li><li><i class="fas fa-user-secret"></i> 100% ANONYMOUS</li><li><i class="fas fa-lock"></i> ADULT CONTENT AVAILABLE</li></ul>`;
+        const getPremiumFeaturesBig = () => `<ul class="feature-list space-y-1.5 mt-3"><li><i class="fas fa-check-circle text-amber-500"></i> Standard Support</li><li><i class="fas fa-tools text-amber-400"></i> <strong class="text-amber-300">✨ FREE Setup Guide ✨</strong></li><li><i class="fas fa-tv"></i> 4K +27K channels</li><li><i class="fas fa-film"></i> Updated Series/Movies</li><li><i class="fab fa-amazon"></i> Prime/Disney+</li><li><i class="fas fa-headset"></i> 24/7 Support · Anonymous</li></ul>`;
+        const plansDatabase = {1: [{period:"1 Month",price:"14€",saveText:null,isBigDeal:false,features:getStandardFeatures()},{period:"3 Months",price:"30€",saveText:"Save 29%",isBigDeal:false,features:getStandardFeatures()},{period:"6 Months",price:"40€",saveText:"Save 52%",isBigDeal:false,features:getStandardFeatures()},{period:"12 Months",price:"60€",saveText:"Save 64%",isBigDeal:true,features:getPremiumFeaturesBig()}],2: [{period:"1 Month",price:"22€"},{period:"3 Months",price:"48€",saveText:"Save 27%"},{period:"6 Months",price:"70€",saveText:"Save 47%"},{period:"12 Months",price:"100€",saveText:"Save 62%",isBigDeal:true}],3: [{period:"1 Month",price:"28€"},{period:"3 Months",price:"62€",saveText:"Save 26%"},{period:"6 Months",price:"95€",saveText:"Save 43%"},{period:"12 Months",price:"135€",saveText:"Save 60%",isBigDeal:true}],4: [{period:"1 Month",price:"34€"},{period:"3 Months",price:"75€",saveText:"Save 26%"},{period:"6 Months",price:"120€",saveText:"Save 41%"},{period:"12 Months",price:"170€",saveText:"Save 58%",isBigDeal:true}]};
+        for(let d of [2,3,4]){ for(let i=0;i<3;i++) plansDatabase[d][i].features=getStandardFeatures(); plansDatabase[d][3].features=getPremiumFeaturesBig(); plansDatabase[d][3].isBigDeal=true; }
+        function renderPlans(d){const p=plansDatabase[d],g=document.getElementById("pricing-grid");g.innerHTML="";p.forEach(plan=>{if(plan.isBigDeal){g.innerHTML+=`<div class="big-deal-card rounded-2xl p-7 flex flex-col relative"><div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[11px] font-black px-4 py-1.5 rounded-full uppercase flex items-center gap-2"><i class="fas fa-crown"></i> BEST DEAL · 12 MONTHS</div><div class="mt-4 text-center"><h3 class="text-2xl font-black text-amber-400">${plan.period}</h3><div class="price-big text-5xl font-black my-2">${plan.price}</div><div class="text-sm"><i class="fas fa-tv"></i> ${d} device${d>1?'s':''}</div></div><div class="flex-grow mt-4">${plan.features}</div><a href="https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`I want ${d} device ${plan.period} for ${plan.price}`)}" class="mt-5 w-full bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2"><i class="fab fa-whatsapp"></i> GET ${plan.period}</a></div>`;}
+            else{g.innerHTML+=`<div class="pricing-card rounded-2xl p-6 flex flex-col"><h3 class="text-xl font-bold">${plan.period}</h3><div class="text-4xl font-black mt-1">${plan.price}</div><div class="flex-grow mt-3">${plan.features}</div><a href="https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`I want ${d} device ${plan.period} for ${plan.price}`)}" class="mt-5 w-full bg-blue-600 hover:bg-blue-500 py-3 rounded-xl text-center font-bold"><i class="fab fa-whatsapp"></i> Get ${plan.period}</a></div>`;}});}
+        function switchDevice(d,btn){document.querySelectorAll('.device-tab').forEach(b=>{b.classList.remove('active','bg-blue-600','text-white');b.classList.add('bg-slate-800/50','text-slate-300');});if(btn){btn.classList.add('active','bg-blue-600','text-white');btn.classList.remove('bg-slate-800/50','text-slate-300');}renderPlans(d);}
+        
+        // FETCH TOP 20 SHOWS FROM TVMAZE API
+        function escapeHtml(str) {
+        return String(str).replace(/[&<>"]/g, function(m){
+            return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m];
+        });
+    }
+
+    function goToPlans() {
+        const el = document.getElementById('subscriptions');
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    async function fetchTopShows() {
+        const grid = document.getElementById('shows-grid');
+        grid.innerHTML = '<div class="col-span-full text-center py-10"><i class="fas fa-spinner fa-spin text-3xl text-amber-500"></i><p class="mt-2">Loading popular shows...</p></div>';
+
+        try {
+            const response = await fetch('https://api.tvmaze.com/shows');
+            if (!response.ok) throw new Error('Network error');
+
+            let shows = await response.json();
+            shows = shows.sort((a, b) => (b.weight || 0) - (a.weight || 0)).slice(0, 20);
+
+            grid.innerHTML = '';
+
+            shows.forEach(show => {
+                const imageUrl = show.image?.medium || 'https://via.placeholder.com/210x295?text=No+Image';
+                const name = show.name || 'Untitled';
+                const genres = show.genres?.slice(0, 2).join(', ') || 'Various';
+                const rating = show.rating?.average ? `⭐ ${show.rating.average}` : '🔥 Popular';
+
+                const card = document.createElement('button');
+                card.type = 'button';
+                card.className = 'show-card text-left rounded-xl overflow-hidden border border-slate-700 hover:border-amber-500 transition-all bg-slate-800/40';
+                card.setAttribute('aria-label', `View plans for ${name}`);
+                card.innerHTML = `
+                    <div class="h-44 overflow-hidden relative bg-slate-700">
+                        <img src="${imageUrl}" alt="${escapeHtml(name)}" loading="lazy" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/210x295?text=Show'">
+                        <div class="absolute top-2 right-2 bg-black/70 text-xs px-2 py-1 rounded-full">${escapeHtml(rating)}</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-bold text-sm truncate">${escapeHtml(name)}</h3>
+                        <p class="text-xs text-slate-400 truncate">${escapeHtml(genres)}</p>
+                    </div>
+                `;
+                card.addEventListener('click', goToPlans);
+                grid.appendChild(card);
+            });
+        } catch (error) {
+            console.error('Error fetching shows:', error);
+            grid.innerHTML = `<div class="col-span-full text-center py-10 text-red-400"><i class="fas fa-exclamation-triangle text-2xl"></i><p>Could not load shows. Please try again later.</p></div>`;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        fetchTopShows();
+        document.querySelectorAll('.device-tab').forEach(t => {
+            t.addEventListener('click', () => {
+                const v = parseInt(t.getAttribute('data-device'));
+                if (v) switchDevice(v, t);
+            });
+        });
+        switchDevice(1, document.querySelector('.device-tab[data-device="1"]'));
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    });
+        
+    </script>
+	
+	<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is IPTV?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "IPTV is a service that allows you to watch live TV, movies, and series via the internet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does Streamoga support 4K?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes, Streamoga provides 4K Ultra HD streaming with thousands of channels."
+   }
+  }
+ ]
+}
+</script>
+</body>
+</html>
